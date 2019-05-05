@@ -1,0 +1,1315 @@
+/********************************************
+                style.css
+			ZURB FOUNDATION 4 
+			 CSS Customizado
+********************************************/
+
+/**************************************/
+/*           DEFINIÇÕES GLOBAIS       */
+/**************************************/
+body{
+	margin: 0;
+}
+
+.container{
+	margin:0;
+	padding: 0;
+}
+ 
+#secondary{
+	float:right;
+	position:absolute;
+}
+
+h1, h2, h3 { font-weight: normal; margin: 0 0 10px 0;}
+h1 { }
+h2 {margin-top:5px; }
+
+.title{
+	margin-top:32px;
+	margin-left:500px;
+}
+
+p { margin: 0 0 10px 0; }
+a {color:#000099; }
+a:hover {color:#000099; } 
+
+blockquote { }
+blockquote p { }
+
+ul, ol { margin: 0 0 10px 0; }
+
+
+.post {   
+	padding: 1em;}
+
+.post h3 {
+	font-size: 28px;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+pre { }
+code, tt { }
+
+#meta { }
+.postmetadata{ 
+	clear:both;
+}
+
+/**************************************/
+/*            CABEÇALHO               */
+/**************************************/
+
+/* Posicionamento da LOGO de sua Unidade.... */
+#logo_ouvidoria{
+	float:left;
+	margin: 1em;
+	padding: 0.2em 0 0.2em 0;
+	color: #000;
+	opacity: 0.75;
+	font-weight: normal;
+	background-repeat: no-repeat;
+	background-image: url('../images/logo.png');
+	background-size: 183px 136px; 
+}
+#logo {
+	position: relative;
+	top: 70px;  		/* Altere este valor para posicionar verticalmente a logomarca de sua unidade na página */
+	left: 10px; 		/* Altere este valor para posicionar horizontalmente a logomarca de sua unidade na página */
+	float:left;	
+}
+
+/* Posicionamento da LOGO da UFPR.... */
+#logoufpr {
+	position: relative;
+	top: 50px; 			/* Altere este valor para posicionar verticalmente a logomarca da UFPR na página */
+	left: 300px; 		/* Altere este valor para posicionar horizontalmente a logomarca da UFPR na página */
+	float: right;
+}
+
+/* Posicionamento da caixa de pesquisa do site.... */
+#btnBusca{
+	position: relative;
+	top: 208px;  		/* Altere este valor para posicionar verticalmente a caixa de pesquisa na página */
+	left: 310px; 		/* Altere este valor para posicionar horizontalmente a caixa de pesquisa na página */
+	height: 41px;
+    width: 200px;
+	background: url('../images/pesquisa.png') no-repeat left top; /* Substitua esta imagem para alterar o visual da caixa de pesquisa tamanho 200x41 pixels */
+	float: right;
+}
+/* Estilos referentes a caixa de pesquisa do site.... */
+#s {
+	font-size: smaller;
+	color: #000;
+	float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:12px;
+    border:none;
+    height:24px;
+    width:140px;
+	margin: 1px 0 1px 8px;	
+}
+
+/**************************************/
+/*             =Imagens               */
+/**************************************/
+
+.container .alignleft,
+.container img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.container .alignright,
+.container img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.container .aligncenter,
+.container img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container img.alignleft,
+.container img.alignright,
+.container img.aligncenter {
+	margin-bottom: 12px;
+}
+
+/**************************************/
+/*    FOTOS E LEGENDAS EM POSTS       */
+/*    classes: .figura e .autor       */
+/**************************************/
+.container .figura{
+	width: 131px;
+	height: 200px;
+	border: thin silver solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+}
+.container .figura img{
+	display: inline;
+}
+.container .figura p{
+	line-height:1.3em;  
+	text-align: left;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+}
+.container .autor p{
+	line-height:1.3em;  
+	text-align: left;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+}
+
+.container .wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	padding: 4px;
+	text-align: center;
+}
+.container .wp-caption img {
+	margin: 5px 5px 0;
+}
+.container .wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+
+.slideshow{
+	margin: 0 5px 2px 4px;
+}
+
+.galleria-container { background-color: #000; }
+.galleria-thumbnails { margin: 0 auto; }
+ 
+#wp_tag_cloud div {
+	line-height: 1.6em;
+}
+#wp-calendar {
+	width: 100%;
+}
+#wp-calendar caption {
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	padding-bottom: 4px;
+	text-align: left;
+}
+#wp-calendar thead {
+	font-size: 9px;
+}
+#wp-calendar thead th {
+
+}
+#wp-calendar tbody{
+	color: #aaa;
+}
+#wp-calendar tbody td {
+	background: #78605D;
+	border: 1px solid #fff;
+	padding: 3px 0 2px;
+	text-align: center;
+}
+#wp-calendar tbody .pad {
+	background: none;
+}
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+#wp-calendar tfoot td {
+	border: 1px solid #ccc;
+}
+#galeria {
+background: url("../images/galeria.png") no-repeat top left;
+
+
+}
+.widget_rss a.rsswidget {
+	color: #000;
+}
+.widget_rss a.rsswidget:hover {
+	color: #ff4b33;
+}
+.widget_rss .widget-title img {
+	width: 11px;
+	height: 11px;
+}
+
+/****************************************************/
+/*                     SIDEBAR                      */
+/*   Aqui é possível alterar as especificações de   */
+/* fontes, cores, tamanhos e distâncias nas colunas */
+/*          laterais esquerda e direita             */
+/****************************************************/
+.sidebar {	
+	position:absolute;
+	margin: 0 0 0 -0.9em;
+	list-style:none;
+	background-color: #003F79;
+	border-left: 7px solid #567C99;
+	width:100%;
+}
+.sidebar h3{
+   height: 23px;
+   background: #9F9D7F;
+   color:#fff;
+   font-size: 0.9em;
+   font-weight: bold;
+   -webkit-border-radius: 10px 10px 10px 10px; /* Bordas arredondadas para navegador Safari */    
+   -moz-border-radius: 10px 10px 10px 10px; /* Bordas arredondadas para navegador Mozilla, etc. */    
+   border-radius: 10px 10px 10px 10px; /* Bordas arredondadas padrão do CSS3 - deve funcionar novas versões do IE */
+   text-align:center;
+   padding-top: 2px;
+ }
+.sidebar ul{
+	list-style:none;
+	margin: 4px 0 4px 3px;
+}
+.sidebar ul li a{
+	font-size: 1em; /* tamanho fonte menu vertical */
+	color:#ffffff;
+	text-decoration:none;
+	padding-left: 1em;
+	line-height:240%;
+ } 
+.sidebar ul li a:before{
+	padding-right: 1px;
+	color:#3A392C;
+	font-weight: bold;
+}
+.sidebar ul li a:hover{
+	color:#B2C6D1;
+	text-decoration:none;
+ }
+  
+/**************************************/
+/*     Conteúdo central principal     */
+/**************************************/
+#conteudo{
+	position:relative;
+	background-color: #F2F2F2;
+	text-align: justify;
+	color: #78605d;
+	min-height: 550px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	padding-bottom: 2px;
+	margin-top:2em;
+}
+ #conteudo p{
+	line-height: 1.15em;
+ }
+ #conteudo h2{
+	margin: 0 0 0 2px;
+ }
+ #conteudo h3{
+	margin: 0 0 0 2px;
+ }
+ #conteudo .data_e_autor{
+	font-size: 0.9em;
+	color: #cacaca;
+	padding: 0 0 5px 10px;
+ }
+#conteudo .tags{
+	font-size: 0.8em; 
+	font-style: italic;
+	color: #b1b1b1;
+ }
+#conteudo .tags a{
+	text-decoration: none;
+	color: #b1b1b1;
+	padding: 0;
+}
+#conteudo .tags a:hover{
+	text-decoration: underline;
+	color: #579aff;
+	padding: 0;
+}
+#conteudo img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+	
+}
+/**************************************/
+/*    		 Título e texto divs      */
+/**************************************/
+.titulo{
+	font-size: 1.1em;/* tamanho da fonte do menu */	
+	background-color: #C4C4C4;
+	color: #000000 !important;
+	text-align: justify;
+	color: #78605d;
+	min-height: 37px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	width:100%;
+	float:left;
+	line-height: 250%;
+	padding-left: 1em;
+	margin:0;
+}
+.textomissao{
+	font-size: 0.95em;
+	color: #000000;
+	width:95%;
+	float:left;
+	margin: 1em 1em 0 1em;
+	padding:0;
+}
+.textomissao p{
+	font-size: 0.95em;
+	color: #000000;
+	width:95%;
+	float:left;
+	padding:0;
+}
+.textomissao li{
+	font-size: 0.95em;
+	color: #000000;
+	width:90%;
+	float:left;
+	padding:0;
+	line-height:120%;
+	margin-left:1em;
+	margin-right:1em;
+}
+.textoreclamacao{
+	font-size: 0.95em;
+	color: #000000;
+	width:95%;
+	float:left;
+	margin: 1em 1em 0 1em;
+	padding:0;
+}
+.textoreclamacao p{
+	font-size: 0.95em;
+	color: #000000;
+	width:95%;
+	float:left;
+	padding:0;
+}
+.textoreclamacao a{
+	font-size: 0.95em;
+	color: #BA3F79;
+	font-weight:bold;
+}
+#relatorio a:hover{
+	font-size: 0.95em;
+	color: #567C99;
+	font-weight:bold;
+}
+#relatorio a{
+	font-size: 0.95em;
+	color: #BA3F79;
+	font-weight:bold;
+}
+.textoreclamacao a:hover{
+	font-size: 0.95em;
+	color: #567C99;
+	font-weight:bold;
+}
+.textoequipe{
+	font-size: 0.91em;
+	color: #000000;
+	width:93%;
+	float:left;
+	margin: 1em 1em 0 1em;
+	padding:0;
+	text-align: left;
+}
+
+.textoequipe p{
+	font-size: 0.91em;
+	color: #000000;
+	width:95%;
+	float:left;
+	padding:0;
+}
+.textoequipe li{
+	font-size: 0.91em;
+	color: #000000;
+	width:95%;
+	float:left;
+	padding:0;
+	list-style-type: none;
+}
+
+.textorelatorio{
+	font-size: 0.95em;
+	color: #000000;
+	width:93%;
+	float:left;
+	margin: 1em 1em 0 1em;
+	padding:0;
+	text-align: right;
+}
+.textorelatorio p{
+	font-size: 0.95em;
+	color: #000000;
+	width:95%;
+	float:left;
+	padding:0;
+}
+.textorelatorio a{
+	color: #003F79;
+}
+/**************************************/
+/*    		 Conteúdo notícias	      */
+/**************************************/
+#noticia{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	text-align: justify;
+	color: #78605d;
+	min-height: 250px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	float:left;
+	padding:0;
+	
+ }
+ #noticia p{
+	line-height: 1.15em;
+ }
+ #noticia h2{
+	margin: 15px 0 0 2px;
+ }
+ #noticia h3{
+	margin: 15px 0 0 2px;
+ }
+ #noticia .data_e_autor{
+	font-size: 0.9em;
+	color: #cacaca;
+	padding: 0 0 5px 10px;
+ }
+#noticia .tags{
+	font-size: 0.8em; 
+	font-style: italic;
+	color: #b1b1b1;
+ }
+#noticia .tags a{
+	text-decoration: none;
+	color: #b1b1b1;
+	padding: 0;
+}
+#noticia .tags a:hover{
+	text-decoration: underline;
+	color: #579aff;
+	padding: 0;
+}
+#noticia img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+}
+
+#slidenoticias{
+	background-color: #ffffff;
+	min-height: 200px;
+	color: #78605d;
+	width:95%;
+	float:left;
+	padding:0;
+	margin:1em;
+}
+/**************************************/
+/*     Conteúdo missão ouvidoria	  */
+/**************************************/
+#missao{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	color: #000000;
+	float:left;
+	margin: 1em 0 0 0;
+	padding:0;
+	padding-bottom:1em;
+ }
+ #missao p{
+	line-height: 1.15em;
+ }
+ #missao h2{
+	margin: 15px 0 0 2px;
+ }
+ #missao h3{
+	margin: 15px 0 0 2px;
+ }
+ #missao .data_e_autor{
+	font-size: 0.9em;
+	color: #cacaca;
+	padding: 0 0 5px 10px;
+ }
+#missao .tags{
+	font-size: 0.8em; 
+	font-style: italic;
+	color: #b1b1b1;
+ }
+#missao .tags a{
+	text-decoration: none;
+	color: #b1b1b1;
+	padding: 0;
+}
+#missao .tags a:hover{
+	text-decoration: underline;
+	color: #579aff;
+	padding: 0;
+}
+#missao img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+}
+/*********************************************/
+/*  Conteúdo reclamação, crítica e sugestão	 */
+/*********************************************/
+#reclamacaoResponsivo{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	text-align: justify;
+	color: #78605d;
+	min-height: 100px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	float:right;
+	margin: 0 0 1em 0;
+	padding:0;
+}
+#reclamacao{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	text-align: justify;
+	color: #78605d;
+	min-height: 270px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	/*width:49%;*/
+	float:right;
+	margin: 1em 0 0 0;
+	padding:0;
+ }
+ #reclamacao p{
+	line-height: 1.15em;
+ }
+ #reclamacao h2{
+	margin: 15px 0 0 2px;
+ }
+ #reclamacao h3{
+	margin: 15px 0 0 2px;
+ }
+ #reclamacao .data_e_autor{
+	font-size: 0.9em;
+	color: #cacaca;
+	padding: 0 0 5px 10px;
+ }
+#reclamacao .tags{
+	font-size: 0.8em; 
+	font-style: italic;
+	color: #b1b1b1;
+ }
+#reclamacao .tags a{
+	text-decoration: none;
+	color: #b1b1b1;
+	padding: 0;
+}
+#reclamacao .tags a:hover{
+	text-decoration: underline;
+	color: #579aff;
+	padding: 0;
+}
+#reclamacao img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+}
+
+/*********************************************/
+/* 		 Conteúdo relatório de atividades	 */
+/*********************************************/
+#relatorio{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	text-align: justify;
+	color: #78605d;
+	float:left;
+	margin: 1em 0 0 0;
+	padding:0;
+	padding-bottom:1em;
+	overflow: hidden;
+}
+ #relatorio p{
+	line-height: 1.15em;
+ }
+ #relatorio h2{
+	margin: 15px 0 0 2px;
+ }
+ #relatorio h3{
+	margin: 15px 0 0 2px;
+ }
+ #relatorio .data_e_autor{
+	font-size: 0.9em;
+	color: #cacaca;
+	padding: 0 0 5px 10px;
+ }
+#relatorio .tags{
+	font-size: 0.8em; 
+	font-style: italic;
+	color: #b1b1b1;
+ }
+#relatorio .tags a{
+	text-decoration: none;
+	color: #b1b1b1;
+	padding: 0;
+}
+#relatorio .tags a:hover{
+	text-decoration: underline;
+	color: #579aff;
+	padding: 0;
+}
+#relatorio img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+}
+
+/*********************************************/
+/* 				 Conteúdo equipe			 */
+/*********************************************/
+#equipe{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	text-align: justify;
+	color: #78605d;
+	/*width:43%;*/
+	float:right;
+	margin: 1em 0 0 0;
+	padding:0;
+	padding-bottom:1em;
+ }
+ #equipe p{
+	line-height: 1.15em;
+ }
+ #equipe h2{
+	margin: 15px 0 0 2px;
+ }
+ #equipe h3{
+	margin: 15px 0 0 2px;
+ }
+ #equipe .data_e_autor{
+	font-size: 0.9em;
+	color: #cacaca;
+	padding: 0 0 5px 10px;
+ }
+#equipe .tags{
+	font-size: 0.8em; 
+	font-style: italic;
+	color: #b1b1b1;
+ }
+#equipe .tags a{
+	text-decoration: none;
+	color: #b1b1b1;
+	padding: 0;
+}
+#equipe .tags a:hover{
+	text-decoration: underline;
+	color: #579aff;
+	padding: 0;
+}
+#equipe img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.2em;
+	float: left;
+	
+}
+/**************************************/
+/*     Conteúdo central principal     */
+/*  quando tiver uma coluna esquerda  */
+/*           de menu                  */
+/**************************************/
+.colesq{
+	/*border-left: 1px dotted #E5E4DC;*/
+	padding:0;
+}
+
+ /**************************************/
+/*     Conteúdo central principal     */
+/*  quando tiver uma coluna direita   */  
+/*           de menu                  */
+/**************************************/
+.coldir{
+	/*border-right: 1px dotted #E5E4DC;*/
+	margin: 14px 0 14px 0;
+ }
+
+/**************************************/
+/*     Conteúdo central principal     */
+/*  quando tiver uma coluna direita   */
+/*       e uma esquerda de menu       */  
+/**************************************/
+.diresq{
+	/*border-left: 1px dotted #E5E4DC;*/
+	/*border-right: 1px dotted #E5E4DC;*/
+	margin: 14px 0 14px 0;
+ }
+ 
+#posts{
+	padding-left:65px;
+	padding-right:10px;
+	margin: 0;
+ }
+ 
+#posts a{
+	color:#000099;
+	margin-right:-15px;
+}
+
+#posts a:hover{
+	color:#000099;
+}
+
+#paginainterna{
+	background-color: #ffffff;
+	box-shadow: 3px 3px 3px #D3D3D3;
+	width: 100%;
+	margin-right:0;
+	padding: 1em;
+	color: #000000;
+	font-size: 0.95em;
+	text-align: justify;
+}
+#paginainterna p{   
+	text-align:justify;
+	font-size: 0.95em;
+}
+#paginainterna img{   
+	border: none;
+	padding: 1em 1em 1em 0;
+}
+#paginainterna p.corpo{
+	font-size: 0.95em;
+	line-height: 120%;
+}
+#paginainterna li{
+	margin-left: 1em;
+	line-height: 120%;
+	font-size: 0.9em;
+}
+#paginainterna h2{
+	font-size: 2em;
+	color: #003F79;
+}
+#paginainterna a{
+	font-size: 1em;
+	color: #003F79;
+}
+#paginaMissao{
+	width: 100%;
+	margin:0;
+	padding: 1em;
+	color: #000000;
+	font-size: 0.95em;
+}
+#noticiasLista{
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 0.95em;
+	text-align: justify;
+}
+#noticiasLista a{
+	font-size: 1.1em;
+	color:#003F79;	
+	font-weight:bold;
+}
+#noticiasLista img{
+	float: left;
+	margin: 0;
+	padding-top: 0;
+}
+#noticiasLista p{
+	font-size: 1em;
+	color: #000000;
+	padding:0;
+}
+#noticiasLista h1{
+	font-size:0.8em; 
+	color:#4D4D4D; 
+	font-style: italic; 
+	margin-left:0.6em;
+}
+#noticiasLista li{
+	font-size: 1em;
+	color: #000000;
+	padding:0;
+	line-height:120%;
+}
+/**************************************/
+/*         CSS dos Eventos            */
+/**************************************/
+
+/*     CSS dos Eventos 1ª página      */
+
+#eventos{
+	margin-left: 10px;
+	margin-top: -10px;
+}
+
+#eventos .titulo{
+	font-size: 0.9em;
+}
+
+#eventos .titulo  li{
+	margin-left: 25px;
+	list-style-type: square;
+	line-height: 1.1em;
+}
+#eventos .titulo  li a{
+	text-decoration: none;
+	color: #78605d;
+	/*font-weight: bold;*/
+}
+#eventos .titulo  li a:hover{
+	color: #483937;
+}
+#eventos h5{
+	font-size: 1.2em;
+	color: #000;
+	background-image: url('../images/h5_juridicas.png');
+	background-repeat: no-repeat;
+	background-position: left center; 
+	padding: 0 0 5px 40px;
+	height: 25px;
+}
+#eventos .mais-eventos a{
+	color: #999;
+	font-size: 0.8em;
+
+}
+#eventos .data-de-publicacao{
+	color: #d2c5c4;
+	font-size: 0.7em;
+	line-height: 18px;
+}
+#eventos .nome-da-taxonomia{
+	color: #b9a6a4;
+	font-size: 1em;
+	line-height: 1.1em;
+}
+#eventos .chamada{
+	font-size: 1em;
+	padding-bottom: 15px;
+}
+#eventos .mais-eventos {
+	background-image: url('../images/mais-eventos.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	margin-top: 20px;
+}
+#eventos .mais-eventos a{
+	font-size: 0.65em;
+	color:#fff;
+	text-decoration:none;
+	font-weight: bold;
+	margin-left: 175px;
+}
+#eventos .mais-eventos a:hover{
+	color:#ddd;
+}
+
+/**************************************/
+/*         CSS das Notícias           */
+/**************************************/
+
+/*     CSS das Notícias 1ª página     */
+
+#noticias{
+	min-height: 300px;
+}
+#noticias .titulo {
+	font-size: 1.1em;
+	margin-left: 0; 
+	padding-left: 0;
+	padding-top: 8px;
+}
+#noticias .titulo a{
+	text-decoration: none;
+	color: #682d43;
+	font-weight: bold;
+}
+#noticias .titulo  a:hover{
+	color: #483937;
+}
+#noticias h5{
+	font-size: 1.2em;
+	color: #000;
+	background-image: url('../images/h5_juridicas.png');
+	background-repeat: no-repeat;
+	background-position: left center; 
+	padding: 0 0 5px 40px;
+	height: 25px;
+	margin-left: -15px;
+}
+#noticias .data-de-publicacao{
+	color: #7c3651;
+	font-size: 0.7em;
+	line-height: 18px;
+}
+#noticias .nome-da-taxonomia{
+	color: #666;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	padding-top: 12px;
+}
+#noticias .chamada{
+	font-size: 1em;
+	padding: 8px 0 8px 0;
+	color: #000;
+	border-bottom: 1px dotted #E5DCE1;
+}
+#noticias .mais-noticias {
+	float: right;
+	width: 90px;
+	height: 28px;
+	border: 1px solid #ddd;
+}
+#noticias .mais-noticias a{
+	font-size: 0.65em;
+	color:#682d43;
+	text-decoration:none;
+	font-weight: bold;
+	margin-left: 5px;
+}
+#noticias .mais-noticias a:hover{
+	color:#7c3651;
+}
+#noticias img{
+	margin: 5px 10px 1px 0;
+	border: 5px solid #e3d9e3;
+}
+
+/**************************************/
+/*         CSS dos Destaques          */
+/**************************************/
+
+#destaques{
+	min-height: 300px;
+	margin-bottom: 5px;
+}
+#destaques .titulo {
+	font-size: 1.1em;
+	margin-left: 0; 
+	padding-left: 0;
+}
+#destaques .titulo a{
+	text-decoration: none;
+	color: #682d43;
+	font-weight: bold;
+}
+#destaques .titulo  a:hover{
+	color: #483937;
+}
+#destaques h5{
+	font-size: 1.2em;
+	color: #000;
+	background-image: url('../images/h5_juridicas.png');
+	background-repeat: no-repeat;
+	background-position: left center; 
+	padding: 0 0 5px 40px;
+	height: 25px;
+	margin-left: -15px;
+}
+#destaques .data-de-publicacao{
+	color: #7c3651;
+	font-size: 0.7em;
+	line-height: 18px;
+}
+#destaques .nome-da-taxonomia{
+	color: #666;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	padding-top: 12px;
+}
+#destaques .chamada{
+	font-size: 1em;
+	padding: 8px 0 8px 0;
+	color: #000;
+	border-bottom: 1px dotted #E5DCE1;
+}
+#destaques .mais-noticias {
+	float: right;
+	width: 90px;
+	height: 28px;
+	border: 1px solid #ddd;
+}
+#destaques .mais-noticias a{
+	font-size: 0.65em;
+	color:#682d43;
+	text-decoration:none;
+	font-weight: bold;
+	margin-left: 5px;
+}
+#destaques .mais-noticias a:hover{
+	color:#7c3651;
+}
+#destaques img{
+	margin: 5px 10px 1px 0;
+	border: 5px solid #e3d9e3;
+}
+/**************************************/
+/*        CSS das Publicações         */
+/**************************************/
+
+#publicacoes{
+	min-height: 300px;
+	margin-bottom: 5px;
+}
+#publicacoes .titulo {
+	font-size: 1.1em;
+	margin-left: 0; 
+	padding-left: 0;
+}
+#publicacoes .titulo a{
+	text-decoration: none;
+	color: #682d43;
+	font-weight: bold;
+}
+#publicacoes .titulo  a:hover{
+	color: #483937;
+}
+#publicacoes h5{
+	font-size: 1.2em;
+	color: #000;
+	background-image: url('../images/h5_juridicas.png');
+	background-repeat: no-repeat;
+	background-position: left center; 
+	padding: 0 0 5px 40px;
+	height: 25px;
+	margin-left: -15px;
+}
+#publicacoes .data-de-publicacao{
+	color: #7c3651;
+	font-size: 0.7em;
+	line-height: 18px;
+}
+#publicacoes .nome-da-taxonomia{
+	color: #666;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+	padding-top: 12px;
+}
+#publicacoes .chamada{
+	font-size: 1em;
+	padding: 8px 0 8px 0;
+	color: #000;
+	border-bottom: 1px dotted #E5DCE1;
+}
+#publicacoes .mais-noticias {
+	float: right;
+	width: 90px;
+	height: 28px;
+	border: 1px solid #ddd;
+}
+#publicacoes .mais-noticias a{
+	font-size: 0.65em;
+	color:#682d43;
+	text-decoration:none;
+	font-weight: bold;
+	margin-left: 5px;
+}
+#publicacoes .mais-noticias a:hover{
+	color:#7c3651;
+}
+#publicacoes img{
+	margin: 5px 10px 1px 0;
+	border: 5px solid #e3d9e3;
+}
+
+
+/**************************************/
+/*               BANNERS              */
+/**************************************/
+.banners{
+	background-color: #fff;
+	padding-top: 20px;
+	border-top: 1px dotted #B9B8A2;
+	border-bottom: 1px dotted #B9B8A2;
+}
+.banners img{
+	border: thin #B9B8A2 solid;
+	margin: 0.2em 0.2em 0.2em 0.2em;
+	padding: 0.15em;
+}
+
+/**************************************/
+/*               RODAPÉ               */
+/**************************************/
+
+/*********************************************/
+/*         MENU DE LINKS DO RODAPÉ           */
+/*********************************************/
+#links{
+	margin-top: 1em;
+	padding: 0 0 0 9%;
+	clear: both;
+	background-color: #002F5B;
+	border-bottom: 1px dotted #8FB2CC;
+}
+#alinhar{
+	background-color: black;
+	position:relative;
+}
+/*********************************************/
+/* PRIMEIRA COLUNA DE LINKS ACIMA DO RODAPÉ  */
+/*            COLUNA ESQUERDA                */
+/*********************************************/
+#links-esquerda{
+	width: 30%;
+ 	color:#b5b5b5;
+	font-size: 0.9em;
+	float: left;
+	text-align:left;
+	border-left: 1px dotted #8FB2CC;
+	margin:1em 0 1em 0;
+	padding: 0;
+}
+#links-esquerda ul{
+	list-style-type: none;
+	text-indent: 0.6em;
+}
+#links-esquerda li:before{
+	color:#b5b5b5;
+}
+#links-esquerda a{
+	text-decoration: none;
+	font-size: 0.9em;
+	color:#F0F1F2;
+}
+#links-esquerda a:hover{
+	color: #8FB2CC;
+}
+#links-esquerda h2{
+	color:#92C0DD;
+	font-weight:bold;
+	font-size:1.3em;
+	text-indent: 0.5em;
+	margin-bottom: 0.2em;
+}
+/*********************************************/
+/* SEGUNDA COLUNA DE LINKS ACIMA DO RODAPÉ   */
+/*             COLUNA CENTRAL                */
+/*********************************************/
+#links-central{
+	width: 30%;
+	color:#3A392C;
+	font-size: 0.9em;
+	float: left;
+	text-align:left;
+	border-left: 1px dotted #8FB2CC;
+	margin:1em 0 1em 0;
+	padding: 0;
+}
+#links-central ul{
+	list-style-type: none;
+	text-indent: 0.6em;
+}
+#links-central li:before{
+	color:#b5b5b5;
+}
+#links-central a{
+	text-decoration: none;
+	font-size: 0.9em;
+	color:#F0F1F2;
+}
+#links-central a:hover{
+	color: #8FB2CC;
+}
+#links-central h2{
+	color:#92C0DD;
+	font-weight:bold;
+	font-size:1.3em;
+	text-indent: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+/*********************************************/
+/* TERCEIRA COLUNA DE LINKS ACIMA DO RODAPÉ  */
+/*              COLUNA DIREITA               */
+/*********************************************/
+#links-direita{
+	width: 30%;
+	color:#3A392C;
+	font-size: 0.9em;
+	float: left;
+	text-align:left;
+	border-left: 1px dotted #8FB2CC;
+	margin:1em 0 1em 0;
+	padding: 0;
+}
+#links-direita ul{
+	list-style-type: none;
+	text-indent: 0.6em;
+}
+#links-direita li:before{
+	color:#b5b5b5;
+}
+#links-direita a{
+	text-decoration: none;
+	font-size: 0.9em;
+	color:#F0F1F2;
+}
+#links-direita a:hover{
+	color: #8FB2CC;
+}
+#links-direita h2{
+	color:#92C0DD;
+	font-weight:bold;
+	font-size:1.3em;
+	text-indent: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+#rodape_copy {
+	background-color: #002F5B;
+	color: #3A392C;
+	width: 100%;
+	padding:0;
+	margin:0;
+	padding: 1em 0 1em 0;
+	color: #333;
+	text-align: center;
+	clear:both;
+}
+.borda{
+	padding: 4px;
+	border-right: 1px solid #fefefe;
+}
+
+@media screen and (min-width: 992px) {
+	#conteudoPrincipal{ 
+		width: 95%;
+		margin-left: -2em;
+	}
+	#alinhar{
+		margin-right:1em;
+	}	
+	#missao{
+		min-height: 270px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	}
+	#relatorio{
+		min-height: 270px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	}
+	#equipe{
+		min-height: 270px;  /* especifica um tamanho mínimo para a altura do conteúdo */
+	}
+}

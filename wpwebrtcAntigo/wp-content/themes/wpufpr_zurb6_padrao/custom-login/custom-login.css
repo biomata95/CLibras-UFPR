@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* Estilos para customização da página de Login do Wordpress */
+
+body.login {background: #17272d url('../images/fundo-admin.png') 0 0 repeat-x;}
+ 
+body.login {border-top-color:#dff4fc;}	/* Cor de fundo da barra do topo */
+.login p#backtoblog a:link, .login p#backtoblog a:visited {color:#003300;}	/* Efeitos no link na barra do topo */
+.login p#backtoblog a:hover, .login p#backtoblog a:active {color:#003300;text-decoration:underline;}	/* Efeito Rollover no link da barra do topo */
